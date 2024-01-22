@@ -1,10 +1,12 @@
 const IP = "localhost";
 const PORT = 50541;
-const MOVE_UP_KEY = "w";
-const MOVE_DOWN_KEY = "s";
-const MOVE_LEFT_KEY = "a";
-const MOVE_RIGHT_KEY = "d";
-const MESSAGES = {
+const MOVEMENT = { // change key to change movement binding, don't change value of the key!
+  w: "up",
+  s: "down",
+  a: "left",
+  d: "right"
+}
+const MESSAGES = { // change key to change message binding, you can also change the message!
   j: "Snacksss",
   k: "I hunger...",
   l: "isss food?",
@@ -16,9 +18,6 @@ const MESSAGES = {
 module.exports = {
   IP,
   PORT,
-  MOVE_UP_KEY,
-  MOVE_DOWN_KEY,
-  MOVE_LEFT_KEY,
-  MOVE_RIGHT_KEY,
+  MOVEMENT,
   MESSAGES
 };
