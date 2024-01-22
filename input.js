@@ -16,6 +16,15 @@ const handleUserInput = function (data) {
   if (data === 'd') { // moves snake right if d key is pressed
     connection.write("Move: right");
   }
+  if (data === 'j') {
+    connection.write("Say: sssnack");
+  }
+  if (data === 'k') {
+    connection.write("Say: need ssspace");
+  }
+  if (data === 'l') {
+    connection.write("Say: sssad");
+  }
 };
 
 const setupInput = (conn) => { // setup interface to handle user input from stdin
