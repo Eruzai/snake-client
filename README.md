@@ -7,8 +7,7 @@ This is a multiplayer version of the game!
 
 ## Final Product
 
-!["screenshot description"](#)
-!["screenshot description"](#)
+![Screenshot](/screenshots/img.jpg?raw=true)
 
 
 ## Getting Started
