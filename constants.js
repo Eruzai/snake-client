@@ -1,6 +1,6 @@
 const IP = "localhost";
 const PORT = 50541;
-const NAME = "EZA"
+const NAME = "EZA" // change this to change the snakes name (must be three characters)
 const MOVEMENT = { // change key to change movement binding, don't change value of the key!
   w: "up",
   s: "down",

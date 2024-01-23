@@ -11,7 +11,7 @@ const connect = function() { // establishes a connection with the game server
 
   conn.on("connect", () => {
     console.log("Successfully connected to game server");
-    conn.write("Name: " + NAME); // tells the server to set our snake's name as KEV
+    conn.write("Name: " + NAME); // tells the server to set our snake's name to our constant
   });
 
   conn.on("data", (data) => { // prints data to the console if the server sends us any
