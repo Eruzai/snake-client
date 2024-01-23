@@ -1,16 +1,22 @@
-const { /*MOVE_UP_KEY, MOVE_DOWN_KEY, MOVE_LEFT_KEY, MOVE_RIGHT_KEY,*/MOVEMENT, MESSAGES } = require("./constants");
-let connection; // stores the active TCP object
+const { clearInterval } = require("timers");
+const { MOVEMENT, MESSAGES } = require("./constants");
 
-const handleUserInput = function (data) {
+let connection; // stores the active TCP object
+let interval = undefined; // stores continous movement interval ID
+
+const handleUserInput = function(data) {
   if (data === '\u0003') { // terminates process if ctr + C is pressed
     process.exit();
-  };
-  if (MOVEMENT.hasOwnProperty(data)) {
-    connection.write("Move: " + MOVEMENT[data]);
-  };
-  if (MESSAGES.hasOwnProperty(data)) {
-    connection.write("Say: " + MESSAGES[data]);
-  };
+  }
+  if (MOVEMENT.hasOwnProperty(data)) { // checks object for key pressed to determine if keybind was pressed
+    clearInterval(interval); // clears our interval for continuous movement
+    interval = setInterval(() => { // creates an interval for continous movement in the direction specified by keybind pressed
+      connection.write("Move: " + MOVEMENT[data]); // tells the server in which direction to move our snake
+    }, 100);
+  }
+  if (MESSAGES.hasOwnProperty(data)) { // checks object for key pressed to determine if keybind was pressed
+    connection.write("Say: " + MESSAGES[data]); // sends message for server to display corresponding to our keybind
+  }
 };
 
 const setupInput = (conn) => { // setup interface to handle user input from stdin
@@ -23,6 +29,4 @@ const setupInput = (conn) => { // setup interface to handle user input from stdi
   return stdin;
 };
 
-module.exports = {
-  setupInput
-};
+module.exports = { setupInput };

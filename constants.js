@@ -5,7 +5,7 @@ const MOVEMENT = { // change key to change movement binding, don't change value 
   s: "down",
   a: "left",
   d: "right"
-}
+};
 const MESSAGES = { // change key to change message binding, you can also change the message!
   j: "Snacksss",
   k: "I hunger...",
@@ -13,7 +13,7 @@ const MESSAGES = { // change key to change message binding, you can also change 
   u: "Need ssspace!",
   i: "Trapped...",
   o: "This isss end"
-}
+};
 
 module.exports = {
   IP,
