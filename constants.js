@@ -15,11 +15,17 @@ const MESSAGES = { // change key to change message binding, you can also change 
   i: "Trapped...",
   o: "This isss end"
 };
+const OPTIONS = {
+  continuousMovement: true,
+  enableScoreboard: true,
+  announceNewPlayers: true
+};
 
 module.exports = {
   IP,
   PORT,
   NAME,
   MOVEMENT,
-  MESSAGES
+  MESSAGES,
+  OPTIONS
 };
