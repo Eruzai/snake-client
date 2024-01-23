@@ -7,7 +7,7 @@ This is a multiplayer version of the game!
 
 ## Final Product
 
-![Screenshot](/screenshots/img.jpg?raw=true)
+![Screenshot](/screenshots/server_and_client_running.png)
 
 
 ## Getting Started
