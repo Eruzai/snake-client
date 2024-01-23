@@ -40,7 +40,7 @@ npm run play
 
 ## Optional steps and modifications
 
-- comments and keybindings can be changed within the constants.js file of the client's directory.
+- your name, comments, and keybindings can be changed within the constants.js file of the client's directory.
 
 - to enable continuous movement of the snakes change line 57 of the constants.js file in the server "src" directory to be a value of true instead of false.
 
