@@ -1,5 +1,6 @@
 const IP = "localhost";
 const PORT = 50541;
+const NAME = "EZA"
 const MOVEMENT = { // change key to change movement binding, don't change value of the key!
   w: "up",
   s: "down",
@@ -18,6 +19,7 @@ const MESSAGES = { // change key to change message binding, you can also change 
 module.exports = {
   IP,
   PORT,
+  NAME,
   MOVEMENT,
   MESSAGES
 };
