@@ -26,5 +26,6 @@ module.exports = {
   PORT,
   NAME,
   MOVEMENT,
-  MESSAGES
+  MESSAGES,
+  OPTIONS
 };
