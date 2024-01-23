@@ -44,9 +44,9 @@ npm run play
 
 - to enable continuous movement of the snakes change line 57 of the constants.js file in the server "src" directory to be a value of true instead of false.
 
-- to enable the scoreboard comment out (add // to the beginning of) line 98 and delete the "//" at the beginning of line 97 of the UserInterface.js file held by the server "src" directory.
+- to enable the scoreboard comment out (add // to the beginning of) line 98 and delete the "//" at the beginning of line 97 of the userInterface.js file held by the server "src" directory.
 
-- paste the following code just after line 29 of the RemoteInterface.js file held by the server "src" directory to enable a message to be broadcast to each existing player when a new player joins!
+- paste the following code just after line 29 of the remoteInterface.js file held by the server "src" directory to enable a message to be broadcast to each existing player when a new player joins!
 
 ```js
 .on('connection', (socket) => { // passes the connecting client to this function
